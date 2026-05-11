@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "WhatsApp Blurify",
+    "name": "ChatVeil",
     "version": "1.0.0",
-    "description": "WhatsApp Blurify keeps your conversations private when it matters most. Whether you're in a meeting, on a crowded train, or sharing your screen — one click instantly blurs all your chats, so you stay connected without compromising your privacy.",
+    "description": "ChatVeil keeps your conversations private when it matters most. Whether you're in a meeting, on a crowded train, or sharing your screen — one click instantly blurs all your chats, so you stay connected without compromising your privacy.",
     "permissions": [
         "activeTab",
         "scripting",
@@ -20,7 +20,7 @@
             "48": "icons/icon.png",
             "128": "icons/icon.png"
         },
-        "default_title": "Whatsapp Blurify"
+        "default_title": "ChatVeil"
     },
     "host_permissions": [
         "https://web.whatsapp.com/*",
