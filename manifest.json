@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "WhatsApp Blurify",
+    "version": "1.0.0",
+    "description": "WhatsApp Blurify keeps your conversations private when it matters most. Whether you're in a meeting, on a crowded train, or sharing your screen — one click instantly blurs all your chats, so you stay connected without compromising your privacy.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "icons": {
+        "16": "icons/icon.png",
+        "48": "icons/icon.png",
+        "128": "icons/icon.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icons/icon.png",
+            "48": "icons/icon.png",
+            "128": "icons/icon.png"
+        },
+        "default_title": "Whatsapp Blurify"
+    },
+    "host_permissions": [
+        "https://web.whatsapp.com/*",
+        "https://*.whatsapp.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://web.whatsapp.com/*",
+                "https://*.whatsapp.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ]
+}

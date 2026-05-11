@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="icons/icon.png" alt="Logo">
+            <h1>Blurify</h1>
+        </div>
+
+        <div class="card">
+            <div class="control-group">
+                <div class="label-row">
+                    <span>Enable Blur</span>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-blur" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="label-row" style="margin-top: 10px;">
+                    <span>Intensity</span>
+                    <span class="intensity-value" id="intensity-display">4px</span>
+                </div>
+                <input type="range" id="blur-intensity" min="0" max="20" value="4">
+            </div>
+        </div>
+
+        <div class="footer">
+            Protecting your privacy since 2026
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
